@@ -1,12 +1,10 @@
 # 🔐 Cybersecurity Labs & Projects Portfolio
 
-Welcome to my **Cybersecurity Journey Repository!**
+Welcome to my **Cybersecurity Labs Repository!**
 
-This repository documents my hands-on cybersecurity practice, including TryHackMe labs, technical writeups, tools, commands and key learnings.
+This repository documents my hands-on cybersecurity practice through TryHackMe labs, technical writeups, tools, commands and key learnings.
 
-I am building my cybersecurity foundation through practical exercises in **penetration testing, system security, and ethical hacking**, while gradually focusing on **SOC Operations and Blue Team / Defensive Security**.
-
-My goal is to strengthen my technical skills, understand attacker techniques and develop the knowledge required for a **SOC Analyst** role.
+I practise cybersecurity concepts using Kali Linux, focusing on network enumeration, exploitation, authentication and privilege escalation.
 
 ---
 
@@ -14,72 +12,59 @@ My goal is to strengthen my technical skills, understand attacker techniques and
 
 - [About Me](#-about-me)
 - [Skills & Tools](#-skills--tools)
-- [Labs & Projects](#-labs--projects)
-  - [TryHackMe Labs](#-tryhackme-labs)
+- [TryHackMe Labs](#-tryhackme-labs)
   - [Blue](#1-blue)
   - [Bounty Hacker](#2-bounty-hacker)
   - [Library](#3-library)
-- [SOC & Blue Team Learning](#-soc--blue-team-learning)
 - [How to Use This Repository](#-how-to-use-this-repository)
-- [Future Plans](#-future-plans)
 
 ---
 
 ## 👩‍💻 About Me
 
-I am a BCA student currently building my foundation in cybersecurity through structured learning and hands-on practice.
+I am a BCA student building my cybersecurity skills through hands-on labs and practical learning.
 
-My current career goal is to become a **SOC Analyst**, with an interest in security monitoring, alert investigation, threat detection and incident response.
-
-I also practise penetration testing labs to understand how vulnerabilities, misconfigurations and attacker techniques can affect systems.
-
-**Currently Focusing On:**
-- Cybersecurity Fundamentals
-- SOC Operations & Blue Team Fundamentals
-- Linux and Windows Security
-- Network Reconnaissance & Enumeration
-- Vulnerability Assessment
-- Hands-on Security Labs
+This repository showcases my completed TryHackMe rooms, technical methodologies and practical learnings.
 
 ---
 
 ## 🛠️ Skills & Tools
 
-*Growing list — updated as I gain more practical experience.*
+*Updated as I gain more hands-on experience.*
 
 ### 🔍 Reconnaissance & Enumeration
-- Nmap – Network scanning and service/version detection
-- Gobuster – Web directory and file enumeration
-- robots.txt – Discovering publicly exposed web paths
-- Page Source Inspection – Identifying information exposed through website source code
+- **Nmap** – Network scanning and service/version detection
+- **Gobuster** – Web directory and file enumeration
+- **robots.txt** – Discovering publicly exposed web paths
+- **Page Source Inspection** – Identifying information exposed through website source code
 
 ### 🔐 Exploitation & Post-Exploitation
-- Metasploit Framework – Exploit module configuration and execution
-- Meterpreter – Post-exploitation session management
-- MS17-010 / EternalBlue – Windows SMB vulnerability lab
-- Hash Dumping – Understanding Windows credential hashes
+- **Metasploit Framework** – Exploitation using configured modules
+- **Meterpreter** – Post-exploitation session management
+- **MS17-010 / EternalBlue** – Windows SMB vulnerability
+- **Windows Hash Dumping** – Understanding SAM and NTLM hashes
 
 ### 🔑 Credential Attacks
-- Hydra – SSH password brute-forcing
-- RockYou Wordlist – Password dictionary testing
-- FTP Anonymous Access – Identifying insecure FTP configurations
+- **Hydra** – SSH password brute-forcing
+- **RockYou Wordlist** – Dictionary-based password testing
+- **FTP** – Anonymous access and file retrieval
+- **SSH** – Remote authentication and access
 
 ### 🐧 Linux Privilege Escalation
-- sudo -l – Checking permitted elevated commands
-- GTFOBins – Understanding privilege escalation through Unix binaries
-- Python-based Privilege Escalation
-- Misconfigured sudo permissions
+- **sudo -l** – Checking permitted elevated commands
+- **GTFOBins** – Understanding privilege escalation through Unix binaries
+- **Python** – Python-based privilege escalation
+- **Sudo Misconfigurations** – Understanding security risks of misconfigured permissions
 
 ### 💻 Operating Systems & Lab Environment
 - Kali Linux
 - Windows
 - Linux
-- Red Hat Enterprise Linux (RHEL)
 - VMware
 - OpenVPN
 
 ### 🧠 Core Concepts Practiced
-- Network Reconnaissance
+- Network Reconnaissance and Enumeration
 - FTP and SSH Authentication
 - Remote Code Execution (RCE)
 - Hashing: SHA-512 and NTLM
@@ -89,9 +74,7 @@ I also practise penetration testing labs to understand how vulnerabilities, misc
 
 ---
 
-## 📂 Labs & Projects
-
-### 🔵 TryHackMe Labs
+## 📂 TryHackMe Labs
 
 I have completed the following TryHackMe rooms as part of my practical cybersecurity learning journey.
 
@@ -103,11 +86,14 @@ All three rooms were completed using my own **Kali Linux virtual machine connect
 | [Bounty Hacker](./bounty-hacker/README.md) | Easy | FTP Enumeration, SSH Brute-Forcing, Linux Privilege Escalation |
 | [Library](./library/README.md) | Medium | Web Enumeration, SSH Brute-Forcing, Python Privilege Escalation |
 
-### 1. Blue
+---
+
+### 1. 🔵 Blue
 
 <kbd>Easy</kbd> <kbd>Windows Exploitation</kbd> <kbd>Metasploit</kbd>
 
 **Key Learning Areas:**
+
 - Identifying open ports and services using Nmap
 - Understanding the MS17-010 (EternalBlue) SMB vulnerability
 - Exploitation using Metasploit Framework
@@ -115,17 +101,18 @@ All three rooms were completed using my own **Kali Linux virtual machine connect
 - Upgrading a shell to a Meterpreter session
 - Understanding Windows hash dumping and SAM/NTLM
 
-**Tools:** Nmap, Metasploit, Meterpreter, Kali Linux, OpenVPN
+**Tools:** Nmap, Metasploit, Meterpreter, Kali Linux, Windows, OpenVPN
 
 📖 [Read Complete Blue Writeup →](./blue/README.md)
 
 ---
 
-### 2. Bounty Hacker
+### 2. 🎯 Bounty Hacker
 
 <kbd>Easy</kbd> <kbd>FTP Enumeration</kbd> <kbd>Linux Privilege Escalation</kbd>
 
 **Key Learning Areas:**
+
 - Network and service enumeration
 - Inspecting website source code
 - Discovering hidden directories using Gobuster
@@ -141,11 +128,12 @@ All three rooms were completed using my own **Kali Linux virtual machine connect
 
 ---
 
-### 3. Library
+### 3. 📚 Library
 
 <kbd>Medium</kbd> <kbd>Web Enumeration</kbd> <kbd>Linux Privilege Escalation</kbd>
 
 **Key Learning Areas:**
+
 - Initial host and service enumeration
 - Discovering exposed paths through robots.txt
 - Website source inspection
@@ -162,8 +150,6 @@ All three rooms were completed using my own **Kali Linux virtual machine connect
 
 ---
 
-
-
 ## 📖 How to Use This Repository
 
 Each TryHackMe room has its own folder containing a detailed `README.md`.
@@ -177,12 +163,12 @@ Every writeup documents:
 - Important commands and their purpose
 - Troubleshooting and observations
 - Key technical concepts
-- Investigation takeaways
+- Practical learnings
 
 ### Repository Structure
 
 ```text
-TryHackMe-Writeups/
+Cybersecurity-Labs/
 │
 ├── README.md
 │
@@ -196,16 +182,10 @@ TryHackMe-Writeups/
     └── README.md
 ```
 
-**Note:** All writeups are documented for educational purposes. In accordance with TryHackMe guidelines, actual flag values are not published.
+**Note:** All writeups are documented for educational purposes. Actual flag values are not published.
 
 ---
 
-
-
 <p align="center">
   🌱 <i>Learning by doing, documenting every step, and growing one lab at a time.</i>
-</p>
-
-<p align="center">
-  🔐 <b>Cybersecurity is a continuous learning journey!</b>
 </p>
